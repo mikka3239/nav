@@ -10,6 +10,7 @@
     "start": "npm run init && ng serve --host 0.0.0.0 --port=7002 --live-reload=false",
     "start:reload": "npm run init && ng serve --host 0.0.0.0 --port=7002",
     "init": "tsx ./scripts/start.ts",
+    "postinit": "tsx ./scripts/strip-ads.ts",
     "setup": "npm run init && tsx ./scripts/build.ts",
     "build-gh-pages": "npm run setup && ng build --base-href ./ --index src/index.html",
     "build": "npm run setup && ng build --index src/index.html",
